@@ -9,7 +9,7 @@ import (
 )
 
 var _ = gauge.Step("On signup page", func() {
-	driver.Get("http://localhost:8080/" + "signup")
+	driver.Get(pages.SignupPageURL)
 })
 
 var _ = gauge.Step("Fill in and send registration form", func() {

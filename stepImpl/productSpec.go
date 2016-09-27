@@ -13,20 +13,22 @@ var _ = gauge.Step("Create a product <table>", func(tbl *m.Table) {
 		description := row.Cells[1]
 		author := row.Cells[2]
 		price := row.Cells[3]
-		driver.Get(pages.NewProductURL) // use step `On new products page`
+		gotoNewProductsPage()
 		createProductPage.Create(title, description, author, price)
 	}
 })
 
-var _ = gauge.Step("On new products page", func() {
+func gotoNewProductsPage() {
 	driver.Get(pages.NewProductURL)
-})
+}
+
+var _ = gauge.Step("On new products page", gotoNewProductsPage)
 
 var _ = gauge.Step("On product page", func() {
 	driver.Get(pages.ProductListPageURL)
 })
 
-var _ = gauge.Step("Search for product <productName>", func(productName string) {
+var _ = gauge.Step("Search for product <productName>", func (productName string) {
 	productListPage := pages.ProductListPage{Page: page}
 	productListPage.Search(productName)
 })
