@@ -47,9 +47,7 @@ java -jar activeadmin-demo.war
 ```
 gauge specs
 ```
-This uses Firefox as default browser for specs execution. Make sure Firefox(v42 or prior) is installed in your machine and is in PATH.
-
-If you want to use Chrome/IE as browser, pass the corresponding argument to set browser environment.
+This uses Chrome as default browser for specs execution.
 
 ## Topics covered in the example
 
