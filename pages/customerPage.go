@@ -1,7 +1,9 @@
 package pages
 
 import (
-	"testing"
+	"fmt"
+
+	. "github.com/manuviswam/gauge-go/testsuit"
 )
 
 type CustomerPage struct {
@@ -22,12 +24,11 @@ func (c *CustomerPage) SearchUser(userName string) {
 }
 
 func (c *CustomerPage) VerifyUserListed(userName string) {
-	var t *testing.T
 	actualUserName, err := c.Page.FindElementByCss(userNameResult).Text()
 	if err != nil {
-		t.Errorf("Failed to get element text: %s", err.Error())
+		T.Fail(fmt.Errorf("Failed to get element text: %s", err.Error()))
 	}
 	if userName != actualUserName {
-		t.Errorf("User %s is not listed", userName)
+		T.Fail(fmt.Errorf("User %s is not listed", userName))
 	}
 }

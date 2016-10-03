@@ -28,7 +28,7 @@ var _ = gauge.Step("On product page", func() {
 	driver.Get(pages.ProductListPageURL)
 })
 
-var _ = gauge.Step("Search for product <productName>", func (productName string) {
+var _ = gauge.Step("Search for product <productName>", func(productName string) {
 	productListPage := pages.ProductListPage{Page: page}
 	productListPage.Search(productName)
 })

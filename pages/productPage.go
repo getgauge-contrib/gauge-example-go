@@ -1,8 +1,9 @@
 package pages
 
 import (
-	"testing"
+	"fmt"
 
+	. "github.com/manuviswam/gauge-go/testsuit"
 	"github.com/tebeka/selenium"
 )
 
@@ -11,11 +12,11 @@ type ProductPage struct {
 }
 
 var (
-	ProductID = "#main_content table tbody tr:nth-child(1) td"
-	ProductTitle = "#main_content table tbody tr:nth-child(2) td"
-	ProductDescription = "#main_content table tbody tr:nth-child(3) td"
-	ProductAuthor      = "#main_content table tbody tr:nth-child(4) td"
-	ProductPrice = "#main_content table tbody tr:nth-child(5) td"
+	ProductID           = "#main_content table tbody tr:nth-child(1) td"
+	ProductTitle        = "#main_content table tbody tr:nth-child(2) td"
+	ProductDescription  = "#main_content table tbody tr:nth-child(3) td"
+	ProductAuthor       = "#main_content table tbody tr:nth-child(4) td"
+	ProductPrice        = "#main_content table tbody tr:nth-child(5) td"
 	ProductDeleteButton = "#titlebar_right div.action_items span.action_item:nth-child(2) a"
 )
 
@@ -34,13 +35,12 @@ func (p *ProductPage) GetWebElementByName(elementName string) selenium.WebElemen
 }
 
 func (p *ProductPage) VerifyProductSpecifier(element selenium.WebElement, value string) {
-	var t *testing.T
 	text, err := element.Text()
 	if err != nil {
-		t.Errorf("Failed to find element text")
+		T.Fail(fmt.Errorf("Failed to find element text"))
 	}
 	if text != value {
-		t.Errorf("want: %s, got: %s", value, text)
+		T.Fail(fmt.Errorf("want: %s, got: %s", value, text))
 	}
 }
 
