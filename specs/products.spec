@@ -32,7 +32,7 @@ tags: admin, product, edit
 
 Delete a product
 ----------------
-tags: admin, product, delete
+tags: admin, product, delete, manual
 The below concept is an example of nested concept, check out the definition.
 
 * Delete product "Learning Go"

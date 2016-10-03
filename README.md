@@ -16,7 +16,7 @@ This example requires the following softwares to run.
     * Download from [here](http://chromedriver.storage.googleapis.com/index.html)
     * On Mac: `brew install chromedriver`
   * Selenium server standalone
-    * Download jar from [here](http://selenium-release.storage.googleapis.com/index.html)
+    * Available in `resources` directory of this repo. If you want a different version of it, it can be downloaded from [here](http://selenium-release.storage.googleapis.com/index.html)
   * Clone this repository in [GOPATH](https://apoorvam.github.io/golang/setup/2015/07/26/setting-up-golang-devbox.html).           
   * `godep github.com/tebeka/selenium`       
 
