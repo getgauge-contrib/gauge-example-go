@@ -3,7 +3,7 @@ package pages
 import (
 	"fmt"
 
-	. "github.com/manuviswam/gauge-go/testsuit"
+	. "github.com/getgauge-contrib/gauge-go/testsuit"
 )
 
 type CustomerPage struct {

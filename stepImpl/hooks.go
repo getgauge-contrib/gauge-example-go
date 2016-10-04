@@ -2,8 +2,8 @@ package stepImpl
 
 import (
 	"github.com/apoorvam/gauge-example-go/pages"
-	"github.com/manuviswam/gauge-go/gauge"
-	"github.com/manuviswam/gauge-go/testsuit"
+	"github.com/getgauge-contrib/gauge-go/gauge"
+	"github.com/getgauge-contrib/gauge-go/testsuit"
 )
 
 func storeStringToScenarioDataStore(key, value string) {

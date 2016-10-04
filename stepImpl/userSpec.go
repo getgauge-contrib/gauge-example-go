@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/apoorvam/gauge-example-go/pages"
-	"github.com/manuviswam/gauge-go/gauge"
+	"github.com/getgauge-contrib/gauge-go/gauge"
 )
 
 var _ = gauge.Step("On signup page", func() {

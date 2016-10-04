@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/apoorvam/gauge-example-go/pages"
-	"github.com/manuviswam/gauge-go/gauge"
-	. "github.com/manuviswam/gauge-go/testsuit"
+	"github.com/getgauge-contrib/gauge-go/gauge"
+	. "github.com/getgauge-contrib/gauge-go/testsuit"
 	"github.com/tebeka/selenium"
 )
 

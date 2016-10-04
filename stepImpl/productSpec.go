@@ -2,8 +2,8 @@ package stepImpl
 
 import (
 	"github.com/apoorvam/gauge-example-go/pages"
-	"github.com/manuviswam/gauge-go/gauge"
-	m "github.com/manuviswam/gauge-go/models"
+	"github.com/getgauge-contrib/gauge-go/gauge"
+	m "github.com/getgauge-contrib/gauge-go/models"
 )
 
 var _ = gauge.Step("Create a product <table>", func(tbl *m.Table) {
