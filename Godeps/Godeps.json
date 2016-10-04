@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/apoorvam/gauge-example-go",
+	"GoVersion": "go1.7",
+	"Deps": []
+}
