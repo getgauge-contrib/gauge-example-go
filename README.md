@@ -17,7 +17,7 @@ This example requires the following softwares to run.
     * On Mac: `brew install chromedriver`
   * Selenium server standalone
     * Available in `resources` directory of this repo. If you want a different version of it, it can be downloaded from [here](http://selenium-release.storage.googleapis.com/index.html)
-  * Clone this repository in [GOPATH](https://apoorvam.github.io/golang/setup/2015/07/26/setting-up-golang-devbox.html).           
+  * Clone this repository in [GOPATH](https://github.com/golang/go/wiki/GOPATH).           
   * `godep github.com/tebeka/selenium`       
 
 ### To set up the Selenium grid
