@@ -1,6 +1,6 @@
 # Gauge example in Go
 
-This is an example project for doing web automation testing with [Gauge](http://getgauge.io). This project tests some of the functionalities of the [active admin demo](https://github.com/getgauge/activeadmin-demo) app. This app is hosted as a Java WAR (with embedded Jetty).
+This is an example project for doing web automation testing with [Gauge](http://gauge.org). This project tests some of the functionalities of the [active admin demo](https://github.com/getgauge/activeadmin-demo) app. This app is hosted as a Java WAR (with embedded Jetty).
 
 ## Running this example
 The tests are run on Firefox by default.
@@ -9,7 +9,7 @@ The tests are run on Firefox by default.
 
 This example requires the following softwares to run.
   * [Go](https://golang.org/)
-  * [Gauge](http://getgauge.io/get-started/index.html)
+  * [Gauge](https://docs.gauge.org/getting_started/installing-gauge.html)
   * Gauge Go plugin
     * can be installed using `gauge --install go`
   * Chrome driver
